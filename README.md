@@ -1,0 +1,1 @@
+# GomyX.github.io
