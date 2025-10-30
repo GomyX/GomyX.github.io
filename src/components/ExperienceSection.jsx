@@ -36,11 +36,13 @@ function ExperienceSection() {
         
         <TimelineFilters filters={filters} onFilterChange={setFilters} />
         
-        <TimelineVisual
-          filteredData={filteredData}
-          onNodeClick={handleNodeClick}
-          selectedItemId={selectedItem?.id}
-        />
+        <div className="timeline-wrapper">
+          <TimelineVisual
+            filteredData={filteredData}
+            onNodeClick={handleNodeClick}
+            selectedItemId={selectedItem?.id}
+          />
+        </div>
         
         <ItemModal
           isOpen={isModalOpen}
