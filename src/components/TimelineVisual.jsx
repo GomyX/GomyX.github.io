@@ -99,7 +99,7 @@ function Scene({ filteredData, onNodeClick, selectedItemId }) {
       
       {nodes.length > 1 && <TimelinePath nodes={nodes} />}
       
-      {nodes.map((node, index) => (
+      {nodes.map((node) => (
         <TimelineNode
           key={node.item.id}
           position={node.position}
